@@ -64,12 +64,6 @@ Route::prefix('admin/foods')->name('foods-')->group(function () {
     Route::get('/rest-title', [D::class, 'copyRestTitle'])->name('rest_title')->middleware('roles:A|M');
 });
 
-
-
-
-
-
-
 Auth::routes();
 //Auth::routes(['register'=> false]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

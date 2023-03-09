@@ -57,7 +57,8 @@
                             <div class="card-body">
                                 <div class="list-table__buttons ">
                                     <button type="submit" class="btn btn-danger" name="delete_photo" value="1">Delete photo</button>
-                                    <button type="submit" class="btn btn-primary d-flex align-content-end m-2" name="save">Update</button>
+                                    <button type="submit" class="btn btn-primary d-flex align-content-end m-2 " style="width: 80px;" name="save">Update</button>
+
 
 
                                 </div>

@@ -64,10 +64,9 @@
                         </div>
                         <div class="card-body">
                             <div class="list-table__buttons gap-3">
-                                <a href="{{route('foods-edit', $food)}}" class="btn btn-secondary">Edit</a>
-
+                                <a href="{{route('foods-edit', $food)}}" class="btn btn-secondary" style="width: 80px;">Edit</a>
                                 <form action="{{route('foods-delete', $food)}}" method="post">
-                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                    <button type="submit" class="btn btn-danger" style="width: 80px;">Delete</button>
                                     @csrf
                                     @method('delete')
                                 </form>

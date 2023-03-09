@@ -58,9 +58,11 @@
                             <textarea class="form-control" placeholder="{{$restaurant->des}}" rows="5" cols="auto"></textarea>
 
                             <div class="list-table__buttons gap-3 mt-3">
-                                <a href="{{route('restaurants-edit', $restaurant)}}" class="btn btn-secondary">EDIT</a>
+                                <a href="{{route('restaurants-edit', $restaurant)}}" class="btn btn-secondary" style="width: 80px;">EDIT</a>
+
                                 <form action="{{route('restaurants-delete', $restaurant)}}" method="post">
-                                    <button type="submit" class="btn btn-danger">DELET</button>
+                                    <button type="submit" class="btn btn-danger" style="width: 80px;">DELET</button>
+
                                     @csrf
                                     @method('delete')
                                 </form>

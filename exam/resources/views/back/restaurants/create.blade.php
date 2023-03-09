@@ -69,7 +69,8 @@
                         <div class="col-md-12">
                             <div class="card-body">
                                 <div class="list-table__buttons ">
-                                    <button type="submit" class="btn btn-danger">Cteate</button>
+                                    <button type="submit" class="btn btn-danger" style="width: 80px;">Cteate</button>
+
                                 </div>
                             </div>
                         </div>

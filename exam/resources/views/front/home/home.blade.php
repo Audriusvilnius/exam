@@ -63,9 +63,7 @@
 
             <div class="col-md-2">
                 <div class="card-body align-content-end gap-1 d-flex float-end">
-
                     <button type="submit" class="btn btn-secondary mb-2">SHOW</button>
-
                     </form>
                     <a href=" {{url('/')}}" class="btn btn-danger mb-2" style="">RESET</a>
                 </div>
@@ -109,7 +107,6 @@
                                 <input type="number" min="1" max="5" name="rate" value="" placeholder="1 - 5" class="form-control imputnumber">
                                 <div class="btn-group">
                                     <button type="submit" class="btn btn-outline-secondary">RATE</button>
-
                                 </div>
                             </div>
                             @csrf
@@ -121,18 +118,20 @@
                                     Qty:
                                 </div>
                                 <div class="col-md-2">
-                                    <input type="number" class="form-control" name="count" value="0" min="1">
+                                    <input type="number" class="form-control" name="count" value="1" min="1">
                                     <input type="hidden" name="id" value="{{$food->id}}">
                                 </div>
                                 <div class="col-md-1 ">
                                     <div class="form-contro">
-                                        <button type="submit" class="btn btn-dark">ADD</button>
+                                        <button type="submit" class="btn btn-dark">
+                                            <i class="bi bi-cart-check-fill"></i>
+                                        </button>
                                     </div>
                                 </div>
                                 @csrf
                         </form>
                     </div>
-                    <div class="col-md-12 d-flex">
+                    <div class=" col-md-12 d-flex">
                         <div class="col-md-4">
                         </div>
                     </div>
@@ -150,7 +149,6 @@
                 </div>
             </div>
         </div>
-
         @endforelse
     </div>
     <div class="mt-4">

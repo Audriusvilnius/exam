@@ -71,7 +71,8 @@
                         <div class="card-body">
                             <div class="list-table__buttons">
                                 {{-- <a href="{{route('ovner-show', $ovner)}}" class="btn btn-info m-2">Show</a> --}}
-                                <a href="{{route('ovner-edit', $ovner)}}" class="btn btn-secondary m-2">Edit</a>
+                                <a href="{{route('ovner-edit', $ovner)}}" class="btn btn-secondary m-2" style="width: 80px;">Edit</a>
+
                                 <form action="{{route('ovner-delete', $ovner)}}" method="post">
                                     <button type="submit" class="btn btn-danger m-2">Delete</button>
                                     @csrf
