@@ -1,5 +1,5 @@
 @inject('basket', 'App\Services\BasketService')
-@extends('layouts.front')
+@extends('layouts.app')
 @section('content')
 
 
@@ -17,7 +17,7 @@
     </div>
 </a>
 
-<div class="container mb-5">
+<div class="container mb-5" style="min-height: 850px">
     <div class="row justify-content-center">
         <div class="col-md-12">
             @if($basketList->count())
@@ -82,12 +82,11 @@
                 @empty
 
                 <div class="col-xxl-12 col-xl-12 col-lg-12">
-                    <div class="card shadow bg-body-tertiary rounded d-flex ">
-                        <div class="card-header justify-content-md-between align-items-center">
+                    <div class="card shadow bg-body-tertiary rounded ">
+                        <div class="card-body align-items-center justify-content-center d-flex">
                             <h1>Basket empty</h1>
-
                         </div>
-                        <div class="card-header justify-content-md-between align-items-center">
+                        <div class="card-body align-items-center justify-content-center d-flex">
                             <a href="{{route('start')}}" class="btn btn-secondary">BACK</a>
                         </div>
                     </div>

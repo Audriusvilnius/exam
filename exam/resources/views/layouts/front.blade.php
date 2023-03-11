@@ -26,8 +26,8 @@
 
  </head>
 
- <body class="mystyle">
-     <div id="app">
+ <body class="mystyle ">
+     <div id="app ">
          <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm ">
              <div class="container">
 
@@ -131,7 +131,8 @@
                          @if($basket->count!=0)
                          <div class="ithem">
                              {{-- <span>{{$basket->test()}}</span> --}}
-                             <span>{{$basket->count}}</span>
+                             @if($basket->count<=9) <span>{{$basket->count}}</span>
+                                 @elseif($basket->count>9) 9+@endif
                          </div>
                      </ul>
                      <span>Total: <b>{{number_format((float)$basket->total, 2, '.', '')}} &euro;</b></span>
@@ -196,7 +197,6 @@
                  </div>
                  @empty
                  <h2 class="list-group-item">No types yet</h2>
-
                  @endforelse
              </div>
          </div>
